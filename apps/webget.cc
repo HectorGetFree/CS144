@@ -17,8 +17,23 @@ void get_URL(const string &host, const string &path) {
     // (not just one call to read() -- everything) until you reach
     // the "eof" (end of file).
 
-    cerr << "Function called: get_URL(" << host << ", " << path << ").\n";
-    cerr << "Warning: get_URL() has not been implemented yet.\n";
+    const string &service = "http";
+
+    // DNS解析获取地址
+    auto address = Address(host, service);
+    // 创建并连接socket
+    auto tcp_socket = TCPSocket();
+    tcp_socket.connect(address);
+    // 创建request字符串
+    string request = "GET " + path + " HTTP/1.1\r\n"
+                    + "Host: " + host + "\r\n"
+                    + "Connection: close\r\n"
+                    + "\r\n";
+    // 发送请求
+    tcp_socket.write(request);
+    while (!tcp_socket.eof()) {
+        printf("%s", tcp_socket.read().c_str());
+    }
 }
 
 int main(int argc, char *argv[]) {
