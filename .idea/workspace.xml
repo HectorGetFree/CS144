@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexRemoved" />
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="8" type="long" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="Sponge" targetName="byte_stream_one_write" />
+      <config projectName="Sponge" targetName="address_dt" />
+      <config projectName="Sponge" targetName="byte_stream_many_writes" />
+      <config projectName="Sponge" targetName="tcp_udp" />
+      <config projectName="Sponge" targetName="byte_stream_two_writes" />
+      <config projectName="Sponge" targetName="recv_window" />
+      <config projectName="Sponge" targetName="sponge" />
+      <config projectName="Sponge" targetName="fsm_stream_reassembler_many" />
+      <config projectName="Sponge" targetName="byte_stream_construction" />
+      <config projectName="Sponge" targetName="recv_special" />
+      <config projectName="Sponge" targetName="net_interface" />
+      <config projectName="Sponge" targetName="stream_copy" />
+      <config projectName="Sponge" targetName="recv_close" />
+      <config projectName="Sponge" targetName="ipv4_parser" />
+      <config projectName="Sponge" targetName="fsm_stream_reassembler_holes" />
+      <config projectName="Sponge" targetName="tcp_benchmark" />
+      <config projectName="Sponge" targetName="fsm_stream_reassembler_overlapping" />
+      <config projectName="Sponge" targetName="recv_transmit" />
+      <config projectName="Sponge" targetName="check_webget" />
+      <config projectName="Sponge" targetName="fsm_ack_rst_relaxed" />
+      <config projectName="Sponge" targetName="fsm_loopback" />
+      <config projectName="Sponge" targetName="parser_dt" />
+      <config projectName="Sponge" targetName="fsm_loopback_win" />
+      <config projectName="Sponge" targetName="webget" />
+      <config projectName="Sponge" targetName="fsm_active_close" />
+      <config projectName="Sponge" targetName="wrapping_integers_cmp" />
+      <config projectName="Sponge" targetName="fsm_passive_close" />
+      <config projectName="Sponge" targetName="network_simulator" />
+      <config projectName="Sponge" targetName="byte_stream_capacity" />
+      <config projectName="Sponge" targetName="send_retx" />
+      <config projectName="Sponge" targetName="wrapping_integers_unwrap" />
+      <config projectName="Sponge" targetName="send_close" />
+      <config projectName="Sponge" targetName="tun" />
+      <config projectName="Sponge" targetName="check_lab3" />
+      <config projectName="Sponge" targetName="recv_connect" />
+      <config projectName="Sponge" targetName="check_lab2" />
+      <config projectName="Sponge" targetName="check_lab1" />
+      <config projectName="Sponge" targetName="fsm_ack_rst_win_relaxed" />
+      <config projectName="Sponge" targetName="fsm_stream_reassembler_dup" />
+      <config projectName="Sponge" targetName="check_lab0" />
+      <config projectName="Sponge" targetName="check_lab6" />
+      <config projectName="Sponge" targetName="format" />
+      <config projectName="Sponge" targetName="check_lab5" />
+      <config projectName="Sponge" targetName="check_lab4" />
+      <config projectName="Sponge" targetName="send_connect" />
+      <config projectName="Sponge" targetName="lab7" />
+      <config projectName="Sponge" targetName="fsm_reorder" />
+      <config projectName="Sponge" targetName="fsm_retx_relaxed" />
+      <config projectName="Sponge" targetName="fsm_listen_relaxed" />
+      <config projectName="Sponge" targetName="tcp_ipv4" />
+      <config projectName="Sponge" targetName="tcp_ip_ethernet" />
+      <config projectName="Sponge" targetName="fsm_stream_reassembler_win" />
+      <config projectName="Sponge" targetName="fsm_stream_reassembler_seq" />
+      <config projectName="Sponge" targetName="send_ack" />
+      <config projectName="Sponge" targetName="wrapping_integers_wrap" />
+      <config projectName="Sponge" targetName="fsm_connect_relaxed" />
+      <config projectName="Sponge" targetName="fsm_retx_win" />
+      <config projectName="Sponge" targetName="fsm_stream_reassembler_single" />
+      <config projectName="Sponge" targetName="send_window" />
+      <config projectName="Sponge" targetName="tcp_parser" />
+      <config projectName="Sponge" targetName="recv_reorder" />
+      <config projectName="Sponge" targetName="send_transmit" />
+      <config projectName="Sponge" targetName="wrapping_integers_roundtrip" />
+      <config projectName="Sponge" targetName="udp_tcpdump" />
+      <config projectName="Sponge" targetName="check" />
+      <config projectName="Sponge" targetName="socket_dt" />
+      <config projectName="Sponge" targetName="send_extra" />
+      <config projectName="Sponge" targetName="tcp_native" />
+      <config projectName="Sponge" targetName="spongechecks" />
+      <config projectName="Sponge" targetName="fsm_winsize" />
+      <config projectName="Sponge" targetName="fsm_stream_reassembler_cap" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aefad74b-371f-4558-85c1-66d95b4c1ecd" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/apps/webget.cc" beforeDir="false" afterPath="$PROJECT_DIR$/apps/webget.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libsponge/byte_stream.cc" beforeDir="false" afterPath="$PROJECT_DIR$/libsponge/byte_stream.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libsponge/byte_stream.hh" beforeDir="false" afterPath="$PROJECT_DIR$/libsponge/byte_stream.hh" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HectorGetFree&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:HectorGetFree/CS144.git&quot;,
+    &quot;accountId&quot;: &quot;cbaa794d-5ec0-4083-b488-22d84bc0ffb3&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/libsponge/util/address.cc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/libsponge/util/socket.cc" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2024" />
+    <option name="minorVersion" value="3.4" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="30FvTE0KQ97iVRdXtQKeP1NHP7V" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "cf.advertisement.text.has.clang-format": "true",
+    "cf.advertisement.text.overridden": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "ctest.advertisement.all.test.configuration.is.created": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/hector/Desktop/CS144",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="CTest 应用程序.所有 CTest">
+    <configuration name="address_dt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="address_dt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="address_dt">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="byte_stream_capacity" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="byte_stream_capacity" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="byte_stream_capacity">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="byte_stream_construction" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="byte_stream_construction" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="byte_stream_construction">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="byte_stream_many_writes" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="byte_stream_many_writes" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="byte_stream_many_writes">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="byte_stream_one_write" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="byte_stream_one_write" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="byte_stream_one_write">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="byte_stream_two_writes" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="byte_stream_two_writes" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="byte_stream_two_writes">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="check" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="check" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="check_lab0" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="check_lab0" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="check_lab1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="check_lab1" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="check_lab2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="check_lab2" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="check_lab3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="check_lab3" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="check_lab4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="check_lab4" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="check_lab5" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="check_lab5" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="check_lab6" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="check_lab6" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="check_webget" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="check_webget" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="format" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="format" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_ack_rst_relaxed" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_ack_rst_relaxed" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_ack_rst_relaxed">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_ack_rst_win_relaxed" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_ack_rst_win_relaxed" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_ack_rst_win_relaxed">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_active_close" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_active_close" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_active_close">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_connect_relaxed" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_connect_relaxed" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_connect_relaxed">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_listen_relaxed" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_listen_relaxed" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_listen_relaxed">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_loopback" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_loopback" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_loopback">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_loopback_win" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_loopback_win" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_loopback_win">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_passive_close" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_passive_close" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_passive_close">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_reorder" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_reorder" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_reorder">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_retx_relaxed" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_retx_relaxed" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_retx_relaxed">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_retx_win" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_retx_win" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_retx_win">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_stream_reassembler_cap" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_stream_reassembler_cap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_stream_reassembler_cap">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_stream_reassembler_dup" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_stream_reassembler_dup" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_stream_reassembler_dup">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_stream_reassembler_holes" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_stream_reassembler_holes" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_stream_reassembler_holes">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_stream_reassembler_many" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_stream_reassembler_many" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_stream_reassembler_many">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_stream_reassembler_overlapping" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_stream_reassembler_overlapping" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_stream_reassembler_overlapping">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_stream_reassembler_seq" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_stream_reassembler_seq" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_stream_reassembler_seq">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_stream_reassembler_single" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_stream_reassembler_single" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_stream_reassembler_single">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_stream_reassembler_win" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_stream_reassembler_win" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_stream_reassembler_win">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fsm_winsize" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="fsm_winsize" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="fsm_winsize">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ipv4_parser" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="ipv4_parser" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="ipv4_parser">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lab7" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="lab7" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="lab7">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="net_interface" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="net_interface" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="net_interface">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="network_simulator" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="network_simulator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="network_simulator">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="parser_dt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="parser_dt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="parser_dt">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_close" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="recv_close" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="recv_close">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_connect" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="recv_connect" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="recv_connect">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_reorder" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="recv_reorder" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="recv_reorder">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_special" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="recv_special" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="recv_special">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_transmit" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="recv_transmit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="recv_transmit">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recv_window" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="recv_window" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="recv_window">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_ack" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="send_ack" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="send_ack">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_close" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="send_close" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="send_close">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_connect" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="send_connect" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="send_connect">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_extra" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="send_extra" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="send_extra">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_retx" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="send_retx" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="send_retx">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_transmit" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="send_transmit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="send_transmit">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send_window" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="send_window" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="send_window">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="socket_dt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="socket_dt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="socket_dt">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sponge" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="sponge" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spongechecks" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="spongechecks" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stream_copy" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="stream_copy" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tcp_benchmark" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="tcp_benchmark" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="tcp_benchmark">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tcp_ip_ethernet" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="tcp_ip_ethernet" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="tcp_ip_ethernet">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tcp_ipv4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="tcp_ipv4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="tcp_ipv4">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tcp_native" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="tcp_native" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="tcp_native">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tcp_parser" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="tcp_parser" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="tcp_parser">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tcp_udp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="tcp_udp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="tcp_udp">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tun" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="tun" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="tun">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="udp_tcpdump" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="udp_tcpdump" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="udp_tcpdump">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="webget" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="webget" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="webget">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wrapping_integers_cmp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="wrapping_integers_cmp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="wrapping_integers_cmp">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wrapping_integers_roundtrip" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="wrapping_integers_roundtrip" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="wrapping_integers_roundtrip">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wrapping_integers_unwrap" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="wrapping_integers_unwrap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="wrapping_integers_unwrap">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wrapping_integers_wrap" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Sponge" TARGET_NAME="wrapping_integers_wrap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Sponge" RUN_TARGET_NAME="wrapping_integers_wrap">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="所有 CTest" type="CTestRunConfiguration" factoryName="CTestRun" PROGRAM_PARAMS="--extra-verbose" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$CMakeCurrentLocalGenerationDir$" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$CTestCurrentExecutableName$" EXPLICIT_BUILD_TARGET_NAME="all" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake 应用程序.stream_copy" />
+      <item itemvalue="CMake 应用程序.address_dt" />
+      <item itemvalue="CMake 应用程序.lab7" />
+      <item itemvalue="CMake 应用程序.network_simulator" />
+      <item itemvalue="CMake 应用程序.parser_dt" />
+      <item itemvalue="CMake 应用程序.socket_dt" />
+      <item itemvalue="CMake 应用程序.tcp_benchmark" />
+      <item itemvalue="CMake 应用程序.tcp_ip_ethernet" />
+      <item itemvalue="CMake 应用程序.tcp_ipv4" />
+      <item itemvalue="CMake 应用程序.tcp_native" />
+      <item itemvalue="CMake 应用程序.tcp_udp" />
+      <item itemvalue="CMake 应用程序.tun" />
+      <item itemvalue="CMake 应用程序.udp_tcpdump" />
+      <item itemvalue="CMake 应用程序.webget" />
+      <item itemvalue="CMake 应用程序.format" />
+      <item itemvalue="CMake 应用程序.check" />
+      <item itemvalue="CMake 应用程序.check_lab0" />
+      <item itemvalue="CMake 应用程序.check_lab1" />
+      <item itemvalue="CMake 应用程序.check_lab2" />
+      <item itemvalue="CMake 应用程序.check_lab3" />
+      <item itemvalue="CMake 应用程序.check_lab4" />
+      <item itemvalue="CMake 应用程序.check_lab5" />
+      <item itemvalue="CMake 应用程序.check_lab6" />
+      <item itemvalue="CMake 应用程序.check_webget" />
+      <item itemvalue="CMake 应用程序.sponge" />
+      <item itemvalue="CMake 应用程序.byte_stream_capacity" />
+      <item itemvalue="CMake 应用程序.byte_stream_construction" />
+      <item itemvalue="CMake 应用程序.byte_stream_many_writes" />
+      <item itemvalue="CMake 应用程序.byte_stream_one_write" />
+      <item itemvalue="CMake 应用程序.byte_stream_two_writes" />
+      <item itemvalue="CMake 应用程序.fsm_ack_rst_relaxed" />
+      <item itemvalue="CMake 应用程序.fsm_ack_rst_win_relaxed" />
+      <item itemvalue="CMake 应用程序.fsm_active_close" />
+      <item itemvalue="CMake 应用程序.fsm_connect_relaxed" />
+      <item itemvalue="CMake 应用程序.fsm_listen_relaxed" />
+      <item itemvalue="CMake 应用程序.fsm_loopback" />
+      <item itemvalue="CMake 应用程序.fsm_loopback_win" />
+      <item itemvalue="CMake 应用程序.fsm_passive_close" />
+      <item itemvalue="CMake 应用程序.fsm_reorder" />
+      <item itemvalue="CMake 应用程序.fsm_retx_relaxed" />
+      <item itemvalue="CMake 应用程序.fsm_retx_win" />
+      <item itemvalue="CMake 应用程序.fsm_stream_reassembler_cap" />
+      <item itemvalue="CMake 应用程序.fsm_stream_reassembler_dup" />
+      <item itemvalue="CMake 应用程序.fsm_stream_reassembler_holes" />
+      <item itemvalue="CMake 应用程序.fsm_stream_reassembler_many" />
+      <item itemvalue="CMake 应用程序.fsm_stream_reassembler_overlapping" />
+      <item itemvalue="CMake 应用程序.fsm_stream_reassembler_seq" />
+      <item itemvalue="CMake 应用程序.fsm_stream_reassembler_single" />
+      <item itemvalue="CMake 应用程序.fsm_stream_reassembler_win" />
+      <item itemvalue="CMake 应用程序.fsm_winsize" />
+      <item itemvalue="CMake 应用程序.ipv4_parser" />
+      <item itemvalue="CMake 应用程序.net_interface" />
+      <item itemvalue="CMake 应用程序.recv_close" />
+      <item itemvalue="CMake 应用程序.recv_connect" />
+      <item itemvalue="CMake 应用程序.recv_reorder" />
+      <item itemvalue="CMake 应用程序.recv_special" />
+      <item itemvalue="CMake 应用程序.recv_transmit" />
+      <item itemvalue="CMake 应用程序.recv_window" />
+      <item itemvalue="CMake 应用程序.send_ack" />
+      <item itemvalue="CMake 应用程序.send_close" />
+      <item itemvalue="CMake 应用程序.send_connect" />
+      <item itemvalue="CMake 应用程序.send_extra" />
+      <item itemvalue="CMake 应用程序.send_retx" />
+      <item itemvalue="CMake 应用程序.send_transmit" />
+      <item itemvalue="CMake 应用程序.send_window" />
+      <item itemvalue="CMake 应用程序.spongechecks" />
+      <item itemvalue="CMake 应用程序.tcp_parser" />
+      <item itemvalue="CMake 应用程序.wrapping_integers_cmp" />
+      <item itemvalue="CMake 应用程序.wrapping_integers_roundtrip" />
+      <item itemvalue="CMake 应用程序.wrapping_integers_unwrap" />
+      <item itemvalue="CMake 应用程序.wrapping_integers_wrap" />
+      <item itemvalue="CTest 应用程序.所有 CTest" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="aefad74b-371f-4558-85c1-66d95b4c1ecd" name="更改" comment="" />
+      <created>1753236140599</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753236140599</updated>
+      <workItem from="1753236141683" duration="950000" />
+      <workItem from="1753238466500" duration="8143000" />
+      <workItem from="1753253103943" duration="5152000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

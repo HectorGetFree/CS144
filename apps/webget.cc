@@ -3,34 +3,19 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <unistd.h>
 
 using namespace std;
 
 void get_URL(const string &host, const string &path) {
-    // Your code here.
-
-    // You will need to connect to the "http" service on
-    // the computer whose name is in the "host" string,
-    // then request the URL path given in the "path" string.
-
-    // Then you'll need to print out everything the server sends back,
-    // (not just one call to read() -- everything) until you reach
-    // the "eof" (end of file).
-
-    const string &service = "http";
-
-    // DNS解析获取地址
-    auto address = Address(host, service);
-    // 创建并连接socket
+    auto address = Address(host, "http");
     auto tcp_socket = TCPSocket();
     tcp_socket.connect(address);
-    // 创建request字符串
-    string request = "GET " + path + " HTTP/1.1\r\n"
+    string request = "GET " + path + " HTTP/1.1" + "\r\n"
                     + "Host: " + host + "\r\n"
-                    + "Connection: close\r\n"
-                    + "\r\n";
-    // 发送请求
+                    + "Connection: close\r\n" + "\r\n";
     tcp_socket.write(request);
+
     while (!tcp_socket.eof()) {
         printf("%s", tcp_socket.read().c_str());
     }
