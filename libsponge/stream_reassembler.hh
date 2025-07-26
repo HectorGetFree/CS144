@@ -52,9 +52,9 @@ class StreamReassembler {
     bool empty() const;
 
 
-    size_t first_unread();
-    size_t first_unassembled();
-    size_t first_unaccepted();
+    size_t first_unread() const;
+    size_t first_unassembled() const;
+    size_t first_unaccepted() const;
     void reassemble(size_t old_first_unassembled, size_t old_first_unaccepted);
     void put_in_buf(const std::string &data, const size_t index);
 };

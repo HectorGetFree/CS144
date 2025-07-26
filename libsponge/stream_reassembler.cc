@@ -56,9 +56,9 @@ void StreamReassembler::push_substring(const string &data, const size_t index, c
 size_t StreamReassembler::unassembled_bytes() const { return _buf.size(); }
 
 bool StreamReassembler::empty() const { return _buf.empty(); }
-size_t StreamReassembler::first_unread() { return _output.bytes_read(); }
-size_t StreamReassembler::first_unassembled() { return _output.bytes_written(); }
-size_t StreamReassembler::first_unaccepted() { return _output.bytes_read() + _capacity; }
+size_t StreamReassembler::first_unread() const { return _output.bytes_read(); }
+size_t StreamReassembler::first_unassembled() const { return _output.bytes_written(); }
+size_t StreamReassembler::first_unaccepted() const { return _output.bytes_read() + _capacity; }
 void StreamReassembler::reassemble(size_t old_first_unassembled, size_t old_first_unaccepted) {
     string s = string();
     for (size_t i = old_first_unassembled; i < old_first_unaccepted; i++) {
