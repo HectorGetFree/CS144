@@ -39,11 +39,11 @@ uint64_t unwrap(WrappingInt32 n, WrappingInt32 isn, uint64_t checkpoint) {
     auto _checkpoint = wrap(checkpoint, isn);
     auto diff = n - _checkpoint;
     //! method 1
-    // 采用数学公式进行运算 -- 做差 ，找差的范围 -- 详细见笔记
+    // 采用数学公式进行运算 -- 做差 ，找差的范围
     // 三种情形下k = 0, -1, 1 时的值
     uint64_t r1 = checkpoint + diff;
-    uint64_t r2 = checkpoint + (diff + (1ll << 32));
-    uint64_t r3 = checkpoint - (diff - (1ll << 32));
+    uint64_t r2 = checkpoint + diff + (1ll << 32);
+    uint64_t r3 = checkpoint + diff - (1ll << 32);
 
     uint64_t d1 = distance(r1, checkpoint);
     uint64_t d2 = distance(r2, checkpoint);
