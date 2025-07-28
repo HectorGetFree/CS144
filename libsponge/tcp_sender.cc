@@ -114,8 +114,22 @@ void TCPSender::ack_received(const WrappingInt32 ackno, const uint16_t window_si
 }
 
 //! \param[in] ms_since_last_tick the number of milliseconds since the last call to this method
-void TCPSender::tick(const size_t ms_since_last_tick) { DUMMY_CODE(ms_since_last_tick); }
+void TCPSender::tick(const size_t ms_since_last_tick) {
+    _ticks += ms_since_last_tick;
+    if (_ticks >= _retransmission_timeout) { // 超时了
+        _segments_out.push(_segments_vector[0]);
+        _ticks = 0;
+        if (!_zero_window) {
+            _retransmission_timeout *= 2; // RTO 重传策略
+        }
+    }
+    _consecutive_retransmissions++;
+}
 
-unsigned int TCPSender::consecutive_retransmissions() const { return {}; }
+unsigned int TCPSender::consecutive_retransmissions() const { return _consecutive_retransmissions; }
 
-void TCPSender::send_empty_segment() {}
+void TCPSender::send_empty_segment() {
+    TCPSegment seg = TCPSegment();
+    seg.header().seqno = wrap(_next_seqno, _isn);
+    _segments_out.push(seg);
+}
