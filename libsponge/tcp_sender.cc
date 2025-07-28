@@ -2,6 +2,7 @@
 
 #include "tcp_config.hh"
 
+#include <cassert>
 #include <random>
 
 // Dummy implementation of a TCP sender
@@ -20,8 +21,8 @@ using namespace std;
 TCPSender::TCPSender(const size_t capacity, const uint16_t retx_timeout, const std::optional<WrappingInt32> fixed_isn)
     : _isn(fixed_isn.value_or(WrappingInt32{random_device()()}))
     , _initial_retransmission_timeout{retx_timeout}
-    , _stream(capacity) {
-    _retransmission_timeout = retx_timeout;
+    , _retransmission_timeout(retx_timeout)
+    , _stream(capacity){
 }
 
 size_t TCPSender::bytes_in_flight() const { return _next_seqno - _abs_ackno; }
@@ -68,7 +69,7 @@ void TCPSender::ack_received(const WrappingInt32 ackno, const uint16_t window_si
         return; // 还没发送过syn，当然无法接受ack
     }
 
-    if (_window_size == 0) {
+    if (window_size == 0) {
         _window_size = 1;
         _zero_window = true;
     } else {
@@ -96,7 +97,7 @@ void TCPSender::ack_received(const WrappingInt32 ackno, const uint16_t window_si
         _syn_received = true;
     }
 
-    if (!_fin_received && _fin_sent && _abs_ackno > 0) {
+    if (!_fin_received && _fin_sent && _stream.input_ended() && _abs_ackno >= _stream.bytes_read() + 2) {
         _fin_received = true;
         _segments_vector.clear();
     }
@@ -115,6 +116,18 @@ void TCPSender::ack_received(const WrappingInt32 ackno, const uint16_t window_si
 
 //! \param[in] ms_since_last_tick the number of milliseconds since the last call to this method
 void TCPSender::tick(const size_t ms_since_last_tick) {
+    if (bytes_in_flight() == 0) {
+        if (!_segments_vector.empty()) {
+            printf("!_segments_vector.empty()");
+            assert(0);
+        }
+        _ticks = 0;
+        return;
+    }
+    if (_segments_vector.empty()) {
+        printf("_segments_vector.empty()");
+        assert(0);
+    }
     _ticks += ms_since_last_tick;
     if (_ticks >= _retransmission_timeout) { // 超时了
         _segments_out.push(_segments_vector[0]);
@@ -122,8 +135,9 @@ void TCPSender::tick(const size_t ms_since_last_tick) {
         if (!_zero_window) {
             _retransmission_timeout *= 2; // RTO 重传策略
         }
+        _consecutive_retransmissions++;
     }
-    _consecutive_retransmissions++;
+
 }
 
 unsigned int TCPSender::consecutive_retransmissions() const { return _consecutive_retransmissions; }
