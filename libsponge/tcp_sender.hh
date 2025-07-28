@@ -34,13 +34,21 @@ class TCPSender {
     uint64_t _next_seqno{0};
 
     uint64_t _abs_ackno{0};
+    WrappingInt32 _ackno{0};
 
     bool _syn_sent{false};
     bool _fin_sent{false};
-
+    bool _syn_received{false};
+    bool _fin_received{false};
     uint16_t _window_size{1};
 
-    std::vector<TCPSegment> _segments_vector;
+    std::vector<TCPSegment> _segments_vector = std::vector<TCPSegment>(); // 方便重传
+
+    bool _zero_window{false};
+
+    uint64_t _ticks = 0;
+
+    uint64_t _consecutive_retransmissions{0};
 
   public:
     //! Initialize a TCPSender
