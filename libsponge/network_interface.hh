@@ -5,6 +5,8 @@
 #include "tcp_over_ip.hh"
 #include "tun.hh"
 
+#include <list>
+#include <map>
 #include <optional>
 #include <queue>
 
@@ -39,6 +41,22 @@ class NetworkInterface {
 
     //! outbound queue of Ethernet frames that the NetworkInterface wants sent
     std::queue<EthernetFrame> _frames_out{};
+
+    // APR条目结构
+    struct ARP_Entry {
+      EthernetAddress eth_addr;
+      size_t ttl;
+    };
+    // ARP表，用于查询IP到MAC映射，保存当前ARP条目的TTL
+    std::map<uint32_t, ARP_Entry> _arp_table{};
+    // 默认ARP条目过期时间 30s
+    const size_t _arp_entry_default_ttl = 30 * 1000;
+    // 正在查询的ARP报文，如果发送了ARP请求后，在枸杞期间没有返回响应，则丢弃等待的IP报文
+    std::map<uint32_t, size_t> _waiting_arp_response_ip_addr{};
+    // 默认ARP请求过期时间 5s
+    const size_t _arp_response_default_ttl = 5 * 1000;
+    // 等待ARP报文返回的待处理的IP报文
+    std::list<std::pair<Address, InternetDatagram>> _waiting_arp_internet_datagrams{};
 
   public:
     //! \brief Construct a network interface with given Ethernet (network-access-layer) and IP (internet-layer) addresses
