@@ -1,86 +1,58 @@
-For build prereqs, see [the CS144 VM setup instructions](https://web.stanford.edu/class/cs144/vm_howto).
+## CS 144: Introduction to Computer Networking
 
-## Sponge quickstart
+## 前言
 
-To set up your build directory:
+​	现在是暑假，本🉑在被驾照考试折磨的情况下学习这门计网课程😭。这是我第一次系统接触计算机网络的知识，只能说最起码认识了该领域的一些名词，他们深层次的机制还没有完全掌握
 
-	$ mkdir -p <path/to/sponge>/build
-	$ cd <path/to/sponge>/build
-	$ cmake ..
+## 课程感受
 
-**Note:** all further commands listed below should be run from the `build` dir.
+​	就lecture video来言，我觉得还可以吧，其实就是若干个小视频拼接起来，之间的关联有但是不是很强，另外讲的也没有感觉特别有趣或者给人恍然大悟的感觉，感觉下来就是一般
 
-To build:
+​	对于lab，**lab整体的设计还挺不错的**，不过确实是**代码量小一点**，然后主要就是**实现接口**，正如网友们所说：自主设计的范围不大，~~但是对我这种菜鸡还是有点友好，尽管我也没有自己去写，但是也方便我学习大佬的代码，理解流程~~。不过有一说一，最起码通过这门课的lab，倒是让我更加熟悉**C++语法**了，比如stl的容器、迭代器、optional、面向对象设计这些，感觉还是很不错的。另外这门课的lab_handout有点谜语人，非常建议结合代码
 
-    $ make
+## Lab
 
-You can use the `-j` switch to build in parallel, e.g.,
+​	我没有独立实现这门课的lab，所以我的lab都是学习大佬的，一开始我参考了[b站阿苏EEer](https://www.bilibili.com/video/BV1v14y1s7oq?t=9.8)的lab0-4，但是最后没有通过所有测试，然后学习了[kiprey](https://kiprey.github.io/tags/CS144/)的lab5-7，最后想着干脆把所有测试都通过吧，也就根据[kiprey](https://kiprey.github.io/tags/CS144/)的代码重新code了一下lab0-4，**所以想要参考代码的话，可以直接到[kiprey](https://kiprey.github.io/tags/CS144/)的博客哦**，另外在参考的同时，我还发现这位学长的**代码风格很不错** 😋
 
-    $ make -j$(nproc)
+环境：GNU/Linux
 
-To test (after building; make sure you've got the [build prereqs](https://web.stanford.edu/class/cs144/vm_howto) installed!)
+我的做法是在mac下使用pd虚拟机，pd虚拟机可以共享宿主机文件，修改同步超级方便，只需要把虚拟机挂在后台然后ssh，然后输入命令就可以正常使用Linux环境了
 
-    $ make check_lab0
+​	下面梳理一下这些lab都在干什么
 
-or
+🧪Lab0 -- 创建一个双向字节流
 
-	$ make check_lab1
+🧪Lab1 -- 构建一个字节重组器
 
-etc.
+🧪Lab2 -- 在前两个lab的基础上构建TCPReceiver	
 
-The first time you run a `make check`, it may run `sudo` to configure two
-[TUN](https://www.kernel.org/doc/Documentation/networking/tuntap.txt) devices for use during testing.
+🧪Lab3 -- 构建TCPSender
 
-### build options
+🧪Lab4 -- 在前面的基础上整体构建一个TCPConnection
 
-You can specify a different compiler when you run cmake:
+🧪Lab5 -- 构建一个网络接口 network interface（也被称为适配器） 也就是模拟ARP协议
 
-    $ CC=clang CXX=clang++ cmake ..
+🧪Lab6 -- 模拟一个router路由器
 
-You can also specify `CLANG_TIDY=` or `CLANG_FORMAT=` (see "other useful targets", below).
+🧪Lab7 -- 无需代码，操作server和client的连接
 
-Sponge's build system supports several different build targets. By default, cmake chooses the `Release`
-target, which enables the usual optimizations. The `Debug` target enables debugging and reduces the
-level of optimization. To choose the `Debug` target:
+​	lab工作流：
 
-    $ cmake .. -DCMAKE_BUILD_TYPE=Debug
+​	CS144的lab代码仓库会随学期清空，你可以fork别人的实现然后回退到初始版本（当然你也可以直接用我的仓库然后回退）
 
-The following targets are supported:
+​	第一次拿到lab的时候，在本仓库下
 
-- `Release` - optimizations
-- `Debug` - debug symbols and `-Og`
-- `RelASan` - release build with [ASan](https://en.wikipedia.org/wiki/AddressSanitizer) and
-  [UBSan](https://developers.redhat.com/blog/2014/10/16/gcc-undefined-behavior-sanitizer-ubsan/)
-- `RelTSan` - release build with
-  [ThreadSan](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Thread_Sanitizer)
-- `DebugASan` - debug build with ASan and UBSan
-- `DebugTSan` - debug build with ThreadSan
+```bash
+mkdir build
+cd build
+cmake ..
+```
 
-Of course, you can combine all of the above, e.g.,
+​	此后只需要在`build`目录下工作即可，包括`make` ，debug等
 
-    $ CLANG_TIDY=clang-tidy-6.0 CXX=clang++-6.0 .. -DCMAKE_BUILD_TYPE=Debug
+​	如果拿到干净的lab发现make报错，可以将错误信息喂给gpt
 
-**Note:** if you want to change `CC`, `CXX`, `CLANG_TIDY`, or `CLANG_FORMAT`, you need to remove
-`build/CMakeCache.txt` and re-run cmake. (This isn't necessary for `CMAKE_BUILD_TYPE`.)
+## 结语
 
-### other useful targets
+​	😭灰溜溜去读《自顶向下》了，run～
 
-To generate documentation (you'll need `doxygen`; output will be in `build/doc/`):
-
-    $ make doc
-
-To lint (you'll need `clang-tidy`):
-
-    $ make -j$(nproc) tidy
-
-To run cppcheck (you'll need `cppcheck`):
-
-    $ make cppcheck
-
-To format (you'll need `clang-format`):
-
-    $ make format
-
-To see all available targets,
-
-    $ make help
