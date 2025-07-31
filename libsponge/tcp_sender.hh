@@ -7,6 +7,7 @@
 #include "wrapping_integers.hh"
 
 #include <functional>
+#include <map>
 #include <queue>
 
 //! \brief The "sender" part of a TCP implementation.
@@ -17,6 +18,17 @@
 //! segments if the retransmission timer expires.
 class TCPSender {
   private:
+    int _timeout{-1};
+    int _timecount{0};
+
+    std::map<size_t, TCPSegment> _outgoing_map{};
+    size_t _outgoing_bytes{0};
+
+    size_t _last_window_size{1};
+    bool _set_syn_flag{false};
+    bool _set_fin_flag{false};
+    size_t _consecutive_retransmissions_count{0};
+
     //! our initial sequence number, the number for our SYN.
     WrappingInt32 _isn;
 
@@ -32,23 +44,6 @@ class TCPSender {
 
     //! the (absolute) sequence number for the next byte to be sent
     uint64_t _next_seqno{0};
-
-    uint64_t _abs_ackno{0};
-    WrappingInt32 _ackno{0};
-
-    bool _syn_sent{false};
-    bool _fin_sent{false};
-    bool _syn_received{false};
-    bool _fin_received{false};
-    uint16_t _window_size{1};
-
-    std::vector<TCPSegment> _segments_vector = std::vector<TCPSegment>(); // 方便重传
-
-    bool _zero_window{false};
-
-    uint64_t _ticks = 0;
-
-    uint64_t _consecutive_retransmissions{0};
 
   public:
     //! Initialize a TCPSender
@@ -105,7 +100,6 @@ class TCPSender {
     //! \brief relative seqno for the next byte to be sent
     WrappingInt32 next_seqno() const { return wrap(_next_seqno, _isn); }
     //!@}
-    bool fin_received() { return _fin_received; }
 };
 
 #endif  // SPONGE_LIBSPONGE_TCP_SENDER_HH
