@@ -29,14 +29,42 @@ void Router::add_route(const uint32_t route_prefix,
     cerr << "DEBUG: adding route " << Address::from_ipv4_numeric(route_prefix).ip() << "/" << int(prefix_length)
          << " => " << (next_hop.has_value() ? next_hop->ip() : "(direct)") << " on interface " << interface_num << "\n";
 
-    DUMMY_CODE(route_prefix, prefix_length, next_hop, interface_num);
-    // Your code here.
+    _router_table.push_back({route_prefix, prefix_length, next_hop, interface_num});
 }
 
 //! \param[in] dgram The datagram to be routed
 void Router::route_one_datagram(InternetDatagram &dgram) {
-    DUMMY_CODE(dgram);
-    // Your code here.
+    // 先查找最优匹配
+    auto max_length_prefix_match = _router_table.end(); // 指向的是最后一个对象的下一个，表示超出容器末尾
+    auto dst_ip_addr = dgram.header().dst;
+    for (auto router_table_iter = _router_table.begin(); router_table_iter != _router_table.end();
+        router_table_iter++) {
+        // 如果匹配长度为0，或者前缀匹配相同
+        if (router_table_iter->prefix_length == 0 ||
+            (router_table_iter->route_prefix ^ dst_ip_addr) >> (32 - router_table_iter->prefix_length) == 0) {
+            // 如果符合条件，更新max_length_prefix_match
+            if (max_length_prefix_match == _router_table.end() ||
+                max_length_prefix_match->prefix_length <= router_table_iter->prefix_length) {
+                max_length_prefix_match = router_table_iter;
+            }
+        }
+    }
+
+    // 为数据包的TTL - 1
+    dgram.header().ttl--;
+    // 如果存在最优匹配就转发
+    if (max_length_prefix_match != _router_table.end() && dgram.header().ttl > 0) {
+        const optional<Address> next_hop = max_length_prefix_match->next_hop;
+        AsyncNetworkInterface interface = _interfaces[max_length_prefix_match->interface_num];
+        if (next_hop.has_value()) {
+            // 如果路由器通过其他路由器连接到相关网络，则下一跳将包含路径上下一个路由器的 IP 地址
+            interface.send_datagram(dgram, next_hop.value());
+        } else {
+            // 如果路由器直接连接到相关网络，则下一跳将为空的可选项。在这种情况下，下一跳是数据报的目标地址
+            interface.send_datagram(dgram, Address::from_ipv4_numeric(dst_ip_addr));
+        }
+    }
+    // 其他情况就丢弃
 }
 
 void Router::route() {
