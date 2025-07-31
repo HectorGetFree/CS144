@@ -1,6 +1,7 @@
 #include "byte_stream.hh"
 
 #include <pcap/pcap.h>
+#include <unistd.h>
 
 // Dummy implementation of a flow-controlled in-memory byte stream.
 
@@ -15,10 +16,12 @@ void DUMMY_CODE(Targs &&... /* unused */) {}
 using namespace std;
 
 ByteStream::ByteStream(const size_t capacity)
-    : _capacity(capacity),
-      _buf(capacity),  // 初始化 vector，大小为 capacity
-      _nread(0),
-      _nwrite(0) {
+    : _queue(),
+    _capacity_size(capacity),
+    _written_size(0),
+    _read_size(0),
+    _end_input(false),
+    _error(false) {
 
 }
 
@@ -36,16 +39,15 @@ size_t ByteStream::write(const string &data) {
     //     byte_written += capacity - write_pos;
     //     return capacity - write_pos;
     // }
-    size_t cnt = 0;
-    for (const auto &item : data) {
-        if (_nwrite >= _nread + _capacity) { // 说明缓冲区已满
-            break;
-        }
-        _buf[_nwrite % _capacity] = item;
-        _nwrite++;
-        cnt++;
+    if (_end_input) {
+        return 0;
     }
-    return cnt;
+    size_t write_size = min(data.size(), _capacity_size - _queue.size());
+    _written_size += write_size;
+    for (size_t i = 0; i < write_size; i++) {
+        _queue.push_back(data[i]);
+    }
+    return write_size;
 }
 
 //! \param[in] len bytes will be copied from the output side of the buffer
@@ -57,22 +59,16 @@ string ByteStream::peek_output(const size_t len) const {
     //     string res(mem+read_pos, write_pos - read_pos);
     // }
     // return res;
-
-    string s = string();
-    for (size_t i = _nread; (i < _nwrite) && (i < _nread + len); i++) {
-        s.push_back(_buf[i % _capacity]); // 在字符串末尾追加
-    }
-    return s;
+    size_t pop_size = min(len, _queue.size());
+    return string(_queue.begin(),_queue.begin()+pop_size);
 }
 
 //! \param[in] len bytes will be removed from the output side of the buffer
 void ByteStream::pop_output(const size_t len) {
-    for (size_t i = 0; i < len; i++) {
-        if (_nread < _nwrite) {
-            _nread++;
-        } else {
-            return;
-        }
+    size_t pop_size = min(len, _queue.size());
+    _read_size += len;
+    for (size_t i = 0; i < pop_size; i++) {
+        _queue.pop_front();
     }
 }
 
@@ -86,20 +82,20 @@ std::string ByteStream::read(const size_t len) {
 }
 
 void ByteStream::end_input() {
-    is_end = true;
+    _end_input = true;
 }
 
-bool ByteStream::input_ended() const { return is_end; }
+bool ByteStream::input_ended() const { return _end_input; }
 
-size_t ByteStream::buffer_size() const { return _nwrite - _nread; }
+size_t ByteStream::buffer_size() const { return  _queue.size(); }
 
-bool ByteStream::buffer_empty() const { return buffer_size() == 0; }
+bool ByteStream::buffer_empty() const { return _queue.empty(); }
 
-bool ByteStream::eof() const { return is_end && buffer_empty(); }
+bool ByteStream::eof() const { return _end_input && _queue.empty(); }
 
-size_t ByteStream::bytes_written() const { return _nwrite; } // 很巧妙的做法，_nwrite 和 _nread 都会一直累加
+size_t ByteStream::bytes_written() const { return _written_size; } // 很巧妙的做法，_nwrite 和 _nread 都会一直累加
                                                              // 无需额外的变量来记录，而且获取索引也会很方便
 
-size_t ByteStream::bytes_read() const { return _nread; }
+size_t ByteStream::bytes_read() const { return _read_size; }
 
-size_t ByteStream::remaining_capacity() const { return _capacity - buffer_size(); }
+size_t ByteStream::remaining_capacity() const { return _capacity_size - _queue.size(); }
