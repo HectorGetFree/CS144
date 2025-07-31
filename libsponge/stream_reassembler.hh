@@ -11,10 +11,10 @@
 //! possibly overlapping) into an in-order byte stream.
 class StreamReassembler {
   private:
-    std::map<size_t, char> _buf = std::map<size_t, char>(); // sliding window
-    size_t _eof_index = 0;
-    bool _eof = false;
-
+    std::map<size_t, std::string> _unassemble_strs; // 一个字节索引到数据子串的 map 映射
+    size_t _next_assembled_idx; // 下一个待装配的字节索引
+    size_t _unassembled_bytes_num;
+    size_t _eof_idx;
 
     ByteStream _output;  //!< The reassembled in-order byte stream
     size_t _capacity;    //!< The maximum number of bytes
@@ -52,11 +52,6 @@ class StreamReassembler {
     bool empty() const;
 
 
-    size_t first_unread() const;
-    size_t first_unassembled() const;
-    size_t first_unaccepted() const;
-    void reassemble(size_t old_first_unassembled, size_t old_first_unaccepted);
-    void put_in_buf(const std::string &data, const size_t index);
 };
 
 #endif  // SPONGE_LIBSPONGE_STREAM_REASSEMBLER_HH
