@@ -53,7 +53,7 @@ class Router {
         const uint32_t route_prefix;
         const uint8_t prefix_length;
         const std::optional<Address> next_hop;
-        const size_t interface_num;
+        const size_t interface_idx;
     };
 
     std::vector<RouterTableEntry> _router_table{};

@@ -44,18 +44,17 @@ void Router::route_one_datagram(InternetDatagram &dgram) {
             (router_table_iter->route_prefix ^ dst_ip_addr) >> (32 - router_table_iter->prefix_length) == 0) {
             // 如果符合条件，更新max_length_prefix_match
             if (max_length_prefix_match == _router_table.end() ||
-                max_length_prefix_match->prefix_length <= router_table_iter->prefix_length) {
+                max_length_prefix_match->prefix_length < router_table_iter->prefix_length) {
                 max_length_prefix_match = router_table_iter;
             }
         }
     }
 
     // 为数据包的TTL - 1
-    dgram.header().ttl--;
     // 如果存在最优匹配就转发
-    if (max_length_prefix_match != _router_table.end() && dgram.header().ttl > 0) {
+    if (max_length_prefix_match != _router_table.end() && dgram.header().ttl-- > 1) { // ttl检查要先做，否则可能 0 减到溢出
         const optional<Address> next_hop = max_length_prefix_match->next_hop;
-        AsyncNetworkInterface interface = _interfaces[max_length_prefix_match->interface_num];
+        AsyncNetworkInterface &interface = _interfaces[max_length_prefix_match->interface_idx];// 使用引用进行深拷贝
         if (next_hop.has_value()) {
             // 如果路由器通过其他路由器连接到相关网络，则下一跳将包含路径上下一个路由器的 IP 地址
             interface.send_datagram(dgram, next_hop.value());
